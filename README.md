@@ -12,3 +12,6 @@ Testing the Feed Reader app using Javascript testing framework **Jasmine**.
 - Open the folder
 - Open `index.html` on your preferred browser
 - There should be several test results at the bottom of the screen that says "~ specs, ~ failures"
+
+
+https://arrowgr.github.io/Feed-Reader-Testing/
