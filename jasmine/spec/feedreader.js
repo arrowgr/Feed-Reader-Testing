@@ -70,12 +70,12 @@ $(function () {
 		 */
 		it('The menu visible on click', function () {
 			$('a.menu-icon-link').trigger('click');
-			expect($('.menu-hidden').is(':visible')).toBeTruthy(true);
+			 expect($('body').hasClass('menu-hidden')).toBe(false);
 		});
 
 		it('The menu hidden when clicked again', function () {
 			$('a.menu-icon-link').trigger('click');
-			expect($('.menu-hidden').is(':visible')).toBeTruthy(false);
+			 expect($('body').hasClass('menu-hidden')).toBe(true);
 		});
 
 	});
