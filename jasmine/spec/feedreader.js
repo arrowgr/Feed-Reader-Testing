@@ -34,12 +34,21 @@ $(function () {
 		 */
 		it("have URLs", function () {
 			allFeeds.forEach(function (feed) {
-				expect(allFeeds).toBeDefined();
-				expect(allFeeds.length).not.toBe(0);
-				expect(allFeeds.url).toContain("http");
+				expect(feed.url).toBeDefined();
+				expect(feed.length).not.toBe(0);
+				expect(feed.url).toContain("http");
 
 			});
 		});
+		
+			it("have URLs", function () {
+			allFeeds.forEach(function (feed) {
+	        	expect(feed.name).toBeDefined();
+                expect(feed.name).not.toBe('');
+
+			});
+		});
+		
 	});
 
 	/* TODO: Write a new test suite named "The menu" */
