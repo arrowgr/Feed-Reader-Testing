@@ -98,8 +98,8 @@ $(function () {
 	     */
 	describe('New Feed Selection', function () {
 		var oldFeed;
-		 var newFeed;
-		
+		var newFeed;
+
 		beforeEach(function (done) {
 			loadFeed(0, function () {
 				oldFeed = $('header-title').html();
@@ -108,10 +108,10 @@ $(function () {
 		});
 
 		it('has been loaded', function () {
-			  newFeed = $('.header-title').html();
-		
-			
-			     expect(oldFeed).not.toEqual(newFeed);
+			newFeed = $('.header-title').html();
+
+
+			expect(oldFeed).not.toEqual(newFeed);
 		});
 	});
 }());
